@@ -1,0 +1,31 @@
+﻿<Window x:Class="Gosavtoinspect.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gosavtoinspect"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="383" Width="565">
+    <Grid Background="#b5d5ca">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="Выбрать метод" HorizontalAlignment="Center"/>
+            <Button x:Name="CheckVinButton" Click="CheckVinButton_Click" Content="CheckVIN" Background="#fffcd6"></Button>
+            <Button x:Name="GetVinYearButton" Click="GetVinYearButton_Click" Content="GetVINYear" Background="#fffcd6"></Button>
+            <Button x:Name="GetVinCountryButton" Click="GetVinCountryButton_Click" Content="GetVinCountry" Background="#fffcd6"></Button>
+            <Button x:Name="CheckMarkButton" Click="CheckMarkButton_Click" Content="CheckMark" Background="#d1eefc"></Button>
+            <Button x:Name="NextMarkButton" Click="NextMarkButton_Click" Content="NextMarkAfter" Background="#d1eefc"></Button>
+            <Button x:Name="GetNextAfterRange" Click="GetNextAfterRange_Click"   Content="GetNextInRange" Background="#d1eefc"></Button>
+        </StackPanel>
+        <RichTextBox Grid.Column="1" x:Name="rtbSource" Background="#e0a9af"></RichTextBox>
+        <RichTextBox Grid.Column="2" x:Name="rtbResult" Background="#e0a9af"></RichTextBox>
+
+    </Grid>
+</Window>
